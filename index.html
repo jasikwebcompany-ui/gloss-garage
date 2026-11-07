@@ -383,4 +383,389 @@ footer a:hover{color:var(--gold2)}
 })();
 </script>
 </body>
+</html><!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GLOSS GARAGE – Luksusowy auto detailing (projekt demonstracyjny)</title>
+<meta name="description" content="GLOSS GARAGE – demonstracyjna strona studia auto detailingu: korekta lakieru, powłoki ceramiczne, folie PPF, detailing wnętrza. Perfekcja zaczyna się od detali.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="GLOSS GARAGE – Perfekcja zaczyna się od detali">
+<meta property="og:description" content="Luksusowe studio auto detailingu – projekt demonstracyjny do portfolio.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=75&auto=format&fit=crop">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"GLOSS GARAGE","description":"Demonstracyjna strona fikcyjnego studia auto detailingu. Dane nie są prawdziwe.","inLanguage":"pl","about":{"@type":"Service","serviceType":"Auto detailing","provider":{"@type":"Organization","name":"GLOSS GARAGE (firma fikcyjna)"}}}
+</script>
+<style>
+:root{--bg:#0a0a0a;--bg2:#121212;--card:#171717;--line:#2a2a2a;--gold:#c9a45c;--gold2:#e2c887;--text:#f4f1ea;--mute:#a7a39a;--serif:'Cormorant Garamond',Georgia,serif;--sans:'Inter',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,90%);margin:auto}
+section{padding:120px 0}
+.eyebrow{font-size:.75rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:block}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.1}
+h2{font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:24px}
+h3{font-size:1.6rem;margin-bottom:10px}
+p{color:var(--mute)}
+.btn{display:inline-block;padding:15px 34px;font:500 .78rem var(--sans);letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--gold);cursor:pointer;transition:.35s;background:none;color:var(--text)}
+.btn.gold{background:var(--gold);color:#0a0a0a}
+.btn.gold:hover{background:var(--gold2)}
+.btn.ghost:hover{background:var(--gold);color:#0a0a0a}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+/* nav */
+header{position:fixed;inset:0 0 auto;z-index:50;transition:.4s;padding:22px 0}
+header.solid{background:rgba(10,10,10,.92);backdrop-filter:blur(12px);padding:14px 0;border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-family:var(--serif);font-size:1.6rem;letter-spacing:.22em;font-weight:600}
+.logo span{color:var(--gold)}
+.menu{display:flex;gap:30px;align-items:center;list-style:none}
+.menu a{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);transition:.3s}
+.menu a:hover{color:var(--gold2)}
+.burger{display:none;background:none;border:0;width:32px;height:24px;position:relative;cursor:pointer}
+.burger i{position:absolute;left:0;width:100%;height:1px;background:var(--text);transition:.3s}
+.burger i:nth-child(1){top:4px}.burger i:nth-child(2){top:12px}.burger i:nth-child(3){top:20px}
+.burger.open i:nth-child(1){top:12px;transform:rotate(45deg)}
+.burger.open i:nth-child(2){opacity:0}
+.burger.open i:nth-child(3){top:12px;transform:rotate(-45deg)}
+/* hero */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding:140px 0 100px}
+.hero-bg{position:absolute;inset:0;background:#111 url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1920&q=75&auto=format&fit=crop") center/cover;transform:scale(1.08);animation:zoom 18s ease-out forwards}
+@keyframes zoom{to{transform:scale(1)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.92),rgba(10,10,10,.45) 60%,rgba(10,10,10,.7))}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(3rem,8.5vw,7rem);max-width:900px;margin-bottom:28px}
+.hero h1 em{color:var(--gold);font-style:italic}
+.hero p{max-width:520px;font-size:1.1rem;color:#cfcbc2;margin-bottom:42px}
+.hero .btns{display:flex;gap:16px;flex-wrap:wrap}
+/* about */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about .img{aspect-ratio:4/5;background:#111 url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1000&q=75&auto=format&fit=crop") center/cover;position:relative}
+.about .img:before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:1px solid var(--gold);z-index:-1}
+.stats{display:flex;gap:40px;margin-top:40px;flex-wrap:wrap}
+.stats b{display:block;font:500 2.6rem var(--serif);color:var(--gold)}
+.stats small{font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--mute)}
+/* services */
+.alt{background:var(--bg2)}
+.head{max-width:680px;margin-bottom:64px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--card);border:1px solid var(--line);padding:42px 34px;transition:.4s;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--gold);transition:.5s}
+.card:hover{transform:translateY(-6px);border-color:#3a3226}
+.card:hover:before{width:100%}
+.card .n{font:500 .85rem var(--sans);letter-spacing:.2em;color:var(--gold);display:block;margin-bottom:26px}
+/* packages */
+.pk{display:flex;flex-direction:column}
+.pk.feat{border-color:var(--gold);background:#1b1812}
+.pk .tag{position:absolute;top:18px;right:18px;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.price{font:500 3rem var(--serif);color:var(--text);margin:14px 0 4px}
+.price small{font:300 .85rem var(--sans);color:var(--mute)}
+.pk ul{list-style:none;margin:24px 0 32px;flex:1}
+.pk li{padding:10px 0;border-bottom:1px solid var(--line);font-size:.92rem;color:var(--mute)}
+.pk li:before{content:"◆ ";color:var(--gold);font-size:.6rem;margin-right:8px}
+.note{margin-top:36px;padding:18px 22px;border:1px dashed var(--gold);font-size:.88rem;color:var(--gold2);text-align:center}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:280px;gap:16px}
+.gal button{position:relative;overflow:hidden;border:0;padding:0;cursor:zoom-in;background:#111}
+.gal button:nth-child(1),.gal button:nth-child(4){grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s ease}
+.gal button:hover img{transform:scale(1.07)}
+.gal span{position:absolute;inset:auto 0 0;padding:50px 22px 18px;text-align:left;font:500 1.3rem var(--serif);background:linear-gradient(transparent,rgba(0,0,0,.85));opacity:0;transform:translateY(10px);transition:.4s;color:var(--text)}
+.gal button:hover span,.gal button:focus-visible span{opacity:1;transform:none}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:100;display:none;align-items:center;justify-content:center;padding:30px}
+.lb.on{display:flex}
+.lb img{max-height:86vh;max-width:92vw;object-fit:contain}
+.lb button{position:absolute;background:none;border:0;color:var(--text);font-size:2.2rem;cursor:pointer;padding:14px;transition:.3s}
+.lb button:hover{color:var(--gold)}
+.lb .x{top:14px;right:18px}.lb .p{left:10px}.lb .nx{right:10px}
+.lb figcaption{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-size:.85rem;color:var(--mute)}
+/* why / process */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.why div{border-top:1px solid var(--gold);padding-top:24px}
+.steps{counter-reset:s}
+.steps div{border-left:1px solid var(--line);padding:0 0 0 26px}
+.steps div:before{counter-increment:s;content:"0" counter(s);font:500 3.4rem var(--serif);color:var(--gold);display:block;line-height:1;margin-bottom:14px}
+/* testimonials */
+blockquote{font:italic 400 1.25rem var(--serif);color:var(--text);line-height:1.5;margin-bottom:22px}
+cite{font:500 .75rem var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-style:normal}
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:80px}
+.info p{margin-bottom:14px}
+.info strong{color:var(--text);font-weight:400}
+form{display:grid;gap:18px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+label{display:block;font-size:.72rem;letter-spacing:.15em;text-transform:uppercase;color:var(--mute);margin-bottom:6px}
+input,select,textarea{width:100%;background:var(--card);border:1px solid var(--line);color:var(--text);padding:14px 16px;font:300 1rem var(--sans);transition:.3s}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)}
+textarea{min-height:130px;resize:vertical}
+#msg{display:none;padding:16px 20px;border:1px solid var(--gold);color:var(--gold2);font-size:.92rem;background:#1b1812}
+/* footer */
+footer{border-top:1px solid var(--line);padding:70px 0 30px;background:#070707}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;margin-bottom:50px}
+footer ul{list-style:none}
+footer li{margin-bottom:8px}
+footer a{color:var(--mute);font-size:.9rem;transition:.3s}
+footer a:hover{color:var(--gold2)}
+.copy{border-top:1px solid var(--line);padding-top:24px;font-size:.78rem;color:#6c6960}
+/* reveal */
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1s ease,transform 1s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero-bg{animation:none;transform:none}html{scroll-behavior:auto}}
+@media(max-width:980px){
+ section{padding:90px 0}
+ .burger{display:block;z-index:60}
+ .menu{position:fixed;inset:0;background:rgba(10,10,10,.97);flex-direction:column;justify-content:center;gap:26px;transform:translateX(100%);transition:.45s;z-index:55}
+ .menu.open{transform:none}
+ .menu a{font-size:1.1rem}
+ .about,.contact{grid-template-columns:1fr;gap:56px}
+ .grid3{grid-template-columns:1fr 1fr}
+ .grid4{grid-template-columns:1fr 1fr}
+ .gal{grid-template-columns:1fr 1fr}
+ .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+ .grid3,.grid4,.row,.fgrid{grid-template-columns:1fr}
+ .gal{grid-template-columns:1fr;grid-auto-rows:260px}
+ .gal button:nth-child(1),.gal button:nth-child(4){grid-row:auto}
+ .gal span{opacity:1;transform:none}
+ .about .img:before{display:none}
+ .hero .btn{width:100%;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+ <div class="wrap nav">
+  <a href="#home" class="logo" aria-label="GLOSS GARAGE – strona główna">GLOSS<span>GARAGE</span></a>
+  <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <ul class="menu" id="menu">
+   <li><a href="#home">Strona główna</a></li>
+   <li><a href="#uslugi">Usługi</a></li>
+   <li><a href="#pakiety">Pakiety</a></li>
+   <li><a href="#realizacje">Realizacje</a></li>
+   <li><a href="#o-nas">O nas</a></li>
+   <li><a href="#kontakt">Kontakt</a></li>
+   <li><a href="#kontakt" class="btn gold" style="color:#0a0a0a;padding:12px 24px">Umów wizytę</a></li>
+  </ul>
+ </div>
+</header>
+
+<main>
+<section class="hero" id="home" style="padding-top:140px">
+ <div class="hero-bg" role="img" aria-label="Czarny luksusowy samochód sportowy z błyszczącym lakierem"></div>
+ <div class="wrap">
+  <span class="eyebrow">Studio auto detailingu</span>
+  <h1>Perfekcja zaczyna się od <em>detali.</em></h1>
+  <p>Profesjonalny auto detailing dla właścicieli aut, którzy oczekują więcej niż czystości. Korekta lakieru, powłoki ceramiczne i ochrona, która zachowuje głębię koloru na lata.</p>
+  <div class="btns">
+   <a href="#uslugi" class="btn gold">Poznaj nasze usługi</a>
+   <a href="#kontakt" class="btn ghost">Umów wizytę</a>
+  </div>
+ </div>
+</section>
+
+<section id="o-nas">
+ <div class="wrap about">
+  <div class="img rv" role="img" aria-label="Luksusowy samochód w studiu detailingowym"></div>
+  <div class="rv">
+   <span class="eyebrow">O nas</span>
+   <h2>Pasja do motoryzacji. Precyzja w każdym ruchu.</h2>
+   <p>GLOSS GARAGE to fikcyjne studio detailingowe stworzone na potrzeby projektu portfolio. Wyobraź sobie miejsce, w którym każdy samochód traktowany jest jak dzieło sztuki: oglądany pod światłem inspekcyjnym, mierzony miernikiem lakieru i pielęgnowany wyłącznie sprawdzonymi preparatami.</p>
+   <p style="margin-top:16px">Łączymy cierpliwość rzemieślnika z nowoczesną technologią. Nie spieszymy się, bo najlepszy efekt wymaga czasu i skupienia.</p>
+   <div class="stats">
+    <div><b>100%</b><small>Indywidualne podejście</small></div>
+    <div><b>0,01 mm</b><small>Dbałość o detale</small></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="uslugi" class="alt">
+ <div class="wrap">
+  <div class="head rv">
+   <span class="eyebrow">Usługi</span>
+   <h2>Kompleksowa pielęgnacja Twojego samochodu</h2>
+   <p>Każda usługa jest dopasowana do stanu lakieru, wnętrza i oczekiwań właściciela.</p>
+  </div>
+  <div class="grid3">
+   <article class="card rv"><span class="n">01</span><h3>Detailing wnętrza</h3><p>Głębokie czyszczenie tapicerki, skóry i plastików, pielęgnacja i zabezpieczenie wszystkich powierzchni.</p></article>
+   <article class="card rv"><span class="n">02</span><h3>Korekta lakieru</h3><p>Wieloetapowe polerowanie usuwające hologramy i rysy, które przywraca głębię i lustrzany połysk.</p></article>
+   <article class="card rv"><span class="n">03</span><h3>Powłoki ceramiczne</h3><p>Twarda, hydrofobowa ochrona lakieru, która ułatwia mycie i podkreśla głębię koloru.</p></article>
+   <article class="card rv"><span class="n">04</span><h3>Folie ochronne PPF</h3><p>Przezroczysta folia chroniąca przed odpryskami i drobnymi zarysowaniami, montowana z precyzją.</p></article>
+   <article class="card rv"><span class="n">05</span><h3>Mycie detailingowe</h3><p>Bezpieczne, ręczne mycie z dekontaminacją lakieru, bez ryzyka powstawania nowych rys.</p></article>
+   <article class="card rv"><span class="n">06</span><h3>Przygotowanie do sprzedaży</h3><p>Odświeżenie wyglądu auta, które pozwala zaprezentować je w najlepszym świetle.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="pakiety">
+ <div class="wrap">
+  <div class="head rv">
+   <span class="eyebrow">Pakiety</span>
+   <h2>Wybierz poziom perfekcji</h2>
+  </div>
+  <div class="grid3">
+   <article class="card pk rv"><h3>BASIC</h3><p>Podstawowa pielęgnacja</p><div class="price">od 400 zł <small>demo</small></div>
+    <ul><li>Mycie detailingowe</li><li>Dekontaminacja lakieru</li><li>Odświeżenie wnętrza</li><li>Wosk lub sealant</li></ul>
+    <a href="#kontakt" class="btn ghost" data-service="BASIC">Zapytaj o wycenę</a></article>
+   <article class="card pk feat rv"><span class="tag">Najczęściej wybierany</span><h3>PREMIUM</h3><p>Kompleksowy detailing</p><div class="price">od 1 500 zł <small>demo</small></div>
+    <ul><li>Wszystko z pakietu BASIC</li><li>Jednoetapowa korekta lakieru</li><li>Detailing wnętrza</li><li>Powłoka kwarcowa 12 mies.</li></ul>
+    <a href="#kontakt" class="btn gold" data-service="PREMIUM">Zapytaj o wycenę</a></article>
+   <article class="card pk rv"><h3>ELITE</h3><p>Pełna pielęgnacja i ochrona</p><div class="price">od 4 500 zł <small>demo</small></div>
+    <ul><li>Wszystko z pakietu PREMIUM</li><li>Wieloetapowa korekta lakieru</li><li>Powłoka ceramiczna</li><li>PPF na strefy narażone</li></ul>
+    <a href="#kontakt" class="btn ghost" data-service="ELITE">Zapytaj o wycenę</a></article>
+  </div>
+  <p class="note rv">Ceny są wyłącznie demonstracyjne i nie stanowią oferty. Każda usługa wymaga indywidualnej wyceny.</p>
+ </div>
+</section>
+
+<section id="realizacje" class="alt">
+ <div class="wrap">
+  <div class="head rv">
+   <span class="eyebrow">Realizacje</span>
+   <h2>Efekty, które widać w świetle</h2>
+   <p>Kliknij zdjęcie, aby je powiększyć. Zdjęcia poglądowe.</p>
+  </div>
+  <div class="gal rv" id="gal">
+   <button type="button" data-cap="Polerowanie lakieru"><img loading="lazy" src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900&q=75&auto=format&fit=crop" alt="Sportowy samochód po korekcie lakieru"><span>Polerowanie lakieru</span></button>
+   <button type="button" data-cap="Czyszczenie wnętrza"><img loading="lazy" src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=900&q=75&auto=format&fit=crop" alt="Luksusowy samochód po detailingu wnętrza"><span>Czyszczenie wnętrza</span></button>
+   <button type="button" data-cap="Powłoka ceramiczna"><img loading="lazy" src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=900&q=75&auto=format&fit=crop" alt="Samochód z powłoką ceramiczną"><span>Powłoka ceramiczna</span></button>
+   <button type="button" data-cap="Zabezpieczenie lakieru"><img loading="lazy" src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=900&q=75&auto=format&fit=crop" alt="Czarny samochód sportowy z błyszczącym lakierem"><span>Zabezpieczenie lakieru</span></button>
+   <button type="button" data-cap="Folia PPF"><img loading="lazy" src="https://images.unsplash.com/photo-1614162692292-7ac56d7f7f1e?w=900&q=75&auto=format&fit=crop" alt="Ciemny samochód premium zabezpieczony folią"><span>Folia PPF</span></button>
+   <button type="button" data-cap="Mycie detailingowe"><img loading="lazy" src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=900&q=75&auto=format&fit=crop" alt="Samochód po myciu detailingowym"><span>Mycie detailingowe</span></button>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="head rv"><span class="eyebrow">Dlaczego my</span><h2>Standard, który czuć w każdym detalu</h2></div>
+  <div class="grid4 why">
+   <div class="rv"><h3>Profesjonalny sprzęt</h3><p>Polerki, lampy inspekcyjne i mierniki grubości lakieru.</p></div>
+   <div class="rv"><h3>Najwyższej jakości kosmetyki</h3><p>Sprawdzone preparaty bezpieczne dla lakieru i wnętrza.</p></div>
+   <div class="rv"><h3>Indywidualne podejście</h3><p>Plan pracy dopasowany do auta i oczekiwań właściciela.</p></div>
+   <div class="rv"><h3>Dbałość o szczegóły</h3><p>Kontrola jakości na każdym etapie, aż do ostatniego szwu.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="alt">
+ <div class="wrap">
+  <div class="head rv"><span class="eyebrow">Proces współpracy</span><h2>Od pierwszej rozmowy do odbioru auta</h2></div>
+  <div class="grid4 steps">
+   <div class="rv"><h3>Kontakt i konsultacja</h3><p>Poznajemy auto i Twoje oczekiwania.</p></div>
+   <div class="rv"><h3>Dobór usługi</h3><p>Proponujemy zakres prac i wycenę.</p></div>
+   <div class="rv"><h3>Realizacja</h3><p>Pracujemy spokojnie, etap po etapie.</p></div>
+   <div class="rv"><h3>Odbiór samochodu</h3><p>Prezentujemy efekt i radzimy, jak o niego dbać.</p></div>
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <div class="head rv"><span class="eyebrow">Opinie</span><h2>Co mówią klienci</h2><p>Poniższe opinie są demonstracyjne i nie pochodzą od prawdziwych klientów.</p></div>
+  <div class="grid3">
+   <figure class="card rv"><blockquote>„Lakier wygląda lepiej niż w dniu odbioru z salonu. Zdecydowanie zwracam uwagę na każdy detal.”</blockquote><cite>Klient demo A.</cite></figure>
+   <figure class="card rv"><blockquote>„Profesjonalne podejście i cierpliwość. Wnętrze auta wygląda jak nowe.”</blockquote><cite>Klient demo B.</cite></figure>
+   <figure class="card rv"><blockquote>„Powłoka ceramiczna robi niesamowitą różnicę. Samochód wciąż błyszczy.”</blockquote><cite>Klient demo C.</cite></figure>
+  </div>
+ </div>
+</section>
+
+<section id="kontakt" class="alt">
+ <div class="wrap contact">
+  <div class="info rv">
+   <span class="eyebrow">Kontakt</span>
+   <h2>Umów wizytę</h2>
+   <p>Opisz swój samochód, a przygotujemy propozycję zakresu prac.</p>
+   <p style="margin-top:30px"><strong>Telefon (demo):</strong> +48 000 000 000</p>
+   <p><strong>E-mail (demo):</strong> kontakt@example.com</p>
+   <p><strong>Adres:</strong> brak, firma fikcyjna</p>
+   <p><strong>Godziny:</strong> dane demonstracyjne</p>
+  </div>
+  <form id="form" class="rv" novalidate>
+   <div class="row">
+    <div><label for="f1">Imię</label><input id="f1" name="imie" autocomplete="given-name" required></div>
+    <div><label for="f2">Telefon lub e-mail</label><input id="f2" name="kontakt" required></div>
+   </div>
+   <div class="row">
+    <div><label for="f3">Marka i model samochodu</label><input id="f3" name="auto"></div>
+    <div><label for="f4">Wybrana usługa</label>
+     <select id="f4" name="usluga">
+      <option value="">Wybierz usługę</option>
+      <option>Detailing wnętrza</option><option>Korekta lakieru</option><option>Powłoki ceramiczne</option><option>Folie ochronne PPF</option><option>Mycie detailingowe</option><option>Przygotowanie do sprzedaży</option><option>Pakiet BASIC</option><option>Pakiet PREMIUM</option><option>Pakiet ELITE</option>
+     </select></div>
+   </div>
+   <div><label for="f5">Wiadomość</label><textarea id="f5" name="wiadomosc"></textarea></div>
+   <button class="btn gold" type="submit">Wyślij zapytanie</button>
+   <div id="msg" role="status">To jest formularz demonstracyjny, który nie jest jeszcze podłączony. Wiadomość nie została wysłana.</div>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="fgrid">
+   <div><a href="#home" class="logo">GLOSS<span>GARAGE</span></a><p style="margin-top:16px;max-width:320px">Fikcyjne studio auto detailingu. Perfekcja zaczyna się od detali.</p></div>
+   <ul><li><a href="#home">Strona główna</a></li><li><a href="#uslugi">Usługi</a></li><li><a href="#pakiety">Pakiety</a></li></ul>
+   <ul><li><a href="#realizacje">Realizacje</a></li><li><a href="#o-nas">O nas</a></li><li><a href="#kontakt">Kontakt</a></li></ul>
+  </div>
+  <div class="copy">© 2026 GLOSS GARAGE. Projekt demonstracyjny do portfolio. Firma, dane kontaktowe, ceny i opinie są fikcyjne. Zdjęcia: Unsplash.</div>
+ </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+ <button class="x" aria-label="Zamknij">×</button>
+ <button class="p" aria-label="Poprzednie">‹</button>
+ <figure><img id="lbimg" alt=""><figcaption id="lbcap"></figcaption></figure>
+ <button class="nx" aria-label="Następne">›</button>
+</div>
+
+<script>
+(function(){
+ var $=function(s,c){return(c||document).querySelector(s)},$$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+ var hd=$('header'),menu=$('#menu'),bg=$('#burger');
+ function scr(){hd.classList.toggle('solid',window.scrollY>40)}
+ scr();window.addEventListener('scroll',scr,{passive:true});
+ function tog(o){menu.classList.toggle('open',o);bg.classList.toggle('open',o);bg.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+ bg.addEventListener('click',function(){tog(!menu.classList.contains('open'))});
+ $$('a',menu).forEach(function(a){a.addEventListener('click',function(){tog(false)})});
+ /* reveal */
+ var els=$$('.rv');
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(el,i){el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+ }else els.forEach(function(el){el.classList.add('in')});
+ /* package -> form */
+ $$('[data-service]').forEach(function(a){a.addEventListener('click',function(){$('#f4').value='Pakiet '+a.dataset.service})});
+ /* form */
+ $('#form').addEventListener('submit',function(e){e.preventDefault();var m=$('#msg');m.style.display='block';m.scrollIntoView({behavior:'smooth',block:'nearest'})});
+ /* lightbox */
+ var btns=$$('#gal button'),lb=$('#lb'),img=$('#lbimg'),cap=$('#lbcap'),cur=0,last;
+ function show(i){cur=(i+btns.length)%btns.length;var b=btns[cur],im=$('img',b);img.src=im.src.replace('w=900','w=1800');img.alt=im.alt;cap.textContent=b.dataset.cap}
+ function open(i){last=document.activeElement;show(i);lb.classList.add('on');document.body.style.overflow='hidden';$('.x',lb).focus()}
+ function close(){lb.classList.remove('on');document.body.style.overflow='';if(last)last.focus()}
+ btns.forEach(function(b,i){b.addEventListener('click',function(){open(i)})});
+ $('.x',lb).addEventListener('click',close);
+ $('.p',lb).addEventListener('click',function(){show(cur-1)});
+ $('.nx',lb).addEventListener('click',function(){show(cur+1)});
+ lb.addEventListener('click',function(e){if(e.target===lb)close()});
+ document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){if(lb.classList.contains('on'))close();else tog(false)}
+  if(!lb.classList.contains('on'))return;
+  if(e.key==='ArrowLeft')show(cur-1);
+  if(e.key==='ArrowRight')show(cur+1);
+ });
+})();
+</script>
+</body>
 </html>
