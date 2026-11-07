@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://gloss-garage-one.vercel.app/sitemap.xml
